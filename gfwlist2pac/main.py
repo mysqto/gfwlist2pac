@@ -188,11 +188,11 @@ def main():
 			with open(args.input, 'rb') as f:
 				content = f.read()
 		else:
-			print('Downloading gfwlist from ', gfwlist_url)
+			print('Downloading gfwlist from', gfwlist_url)
 			content = urlopen(gfwlist_url, timeout = 15).read()
 
 	else:
-		print('Downloading gfwlist from ', gfwlist_url)
+		print('Downloading gfwlist from', gfwlist_url)
 		content = urlopen(gfwlist_url, timeout = 15).read()
 
 	if args.user_rule:
@@ -204,7 +204,7 @@ def main():
 				user_rule = f.read()
 		else:
 			# Yeah, it's an URL, try to download it
-			print('Downloading user rules file from ', args.user_rule)
+			print('Downloading user rules file from', args.user_rule)
 			user_rule = urlopen(args.user_rule, timeout = 15).read()
 
 	content = decode_gfwlist(content.decode())
