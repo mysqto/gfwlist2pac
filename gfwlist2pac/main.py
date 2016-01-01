@@ -1,16 +1,18 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-
+from __future__ import print_function
 import pkgutil
 import json
 import logging
 import base64
 import collections
 from argparse import ArgumentParser
+
 try:
 	from urllib.request import urlopen
 except ImportError:
 	from urllib2 import urlopen
+
 try:
 	from urllib.parse import urlparse
 except ImportError:
@@ -114,7 +116,11 @@ def parse_gfwlist(gfwlist):
 def reduce_domains(domains):
 	# reduce 'www.google.com' to 'google.com'
 	# remove invalid domains
-	tld_content = pkgutil.get_data('gfwlist2pac', 'resources/tld.txt').decode()
+	tld_content = pkgutil.get_data('gfwlist2pac', 'resources/tld.txt')
+	try:
+		tld_content = tld_content.decode()
+	except:
+		tld_content = tld_content
 	tlds = set(tld_content.splitlines(False))
 	new_domains = set()
 	for domain in domains:
