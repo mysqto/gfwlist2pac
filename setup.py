@@ -7,7 +7,7 @@ setup(
     name="gfwlist2pac",
     version="1.1.4",
     license='MIT',
-    description="convert gfwlist2pac to pac, originaly by clowwindy, maintained by mysqto now",
+    description="convert gfwlist2pac to pac, originally by clowwindy, maintained by mysqto now",
     author='originally by @clowwindy, currently maintained by @mysqto',
     author_email='my@mysq.to',
     url='https://github.com/mysqto/gfwlist2pac',

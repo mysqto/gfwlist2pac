@@ -1,15 +1,15 @@
 Metadata-Version: 1.1
 Name: gfwlist2pac
 Version: 1.1.4
-Summary: convert gfwlist2pac to pac, original by clowwindy, maintained by mysqto now
+Summary: convert gfwlist2pac to pac, originally by clowwindy, maintained by mysqto now
 Home-page: https://github.com/mysqto/gfwlist2pac
-Author: mysqto
+Author: originally by @clowwindy, currently maintained by @mysqto
 Author-email: my@mysq.to
 License: MIT
 Description: GFWList2PAC
         ===========
         
-        |PyPI version| |Build Status| |Coverage Status|
+        |PyPI version|
         
         Generate fast PAC file from gfwlist. Examples: `fast
         mode <https://github.com/mysqto/gfwlist2pac/blob/master/test/proxy.pac>`__
@@ -60,10 +60,6 @@ Description: GFWList2PAC
         
         .. |PyPI version| image:: https://img.shields.io/pypi/v/gfwlist2pac.svg?style=flat
            :target: https://pypi.python.org/pypi/gfwlist2pac
-        .. |Build Status| image:: https://img.shields.io/travis/mysqto/gfwlist2pac/master.svg?style=flat
-           :target: https://travis-ci.org/mysqto/gfwlist2pac
-        .. |Coverage Status| image:: http://192.81.132.184/result/gfwlist2pac
-           :target: http://192.81.132.184/job/gfwlist2pac/ws/htmlcov/index.html
         
 Platform: UNKNOWN
 Classifier: License :: OSI Approved :: MIT License
